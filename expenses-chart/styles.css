@@ -125,7 +125,7 @@ main{
     border-radius: 5px;
 }
 .chart .column:hover{
-    background-color:hsla(10, 79%, 65%, 0.5) ;
+    opacity: 0.5 ;
     cursor: pointer;
     
 }
