@@ -140,7 +140,7 @@ main{
     opacity: 0;
     pointer-events: none;
 }
-.column:hover .tooltip{
+.chart .column:hover .tooltip{
     opacity: 1;
 }
 
