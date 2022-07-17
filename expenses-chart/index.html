@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart</title>
+  <link rel="stylesheet" href="./styles.css" type="text/css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <main>
+    <div class="top"><!--540px x 125px padding 40-->
+      <div class="balance">
+        <p>My balance</p> <!--14px-->
+        <p>$921.48</p>
+      </div>
+      <img src="./images/logo.svg" alt="logo" class="logo"> <!--24px-->
+    </div>
+    
+    <div class="bottom"><!--540px x 510px padding 40px-->
+      <div class="last-week-chart">
+        <h1>Spending - Last 7 days </h1><!--24px-->
+        <div class="chart">
+          <div><p>mon</p><div class="column"><div class="tooltip"></div></div></div>
+          <div><p>tue</p><div class="column"><div class="tooltip"></div></div></div><!--width 50px gap 18px-->
+          <div><p>wed</p><div class="column"><div class="tooltip"></div></div></div>
+          <div><p>thu</p><div class="column"><div class="tooltip"></div></div></div>
+          <div><p>fri</p><div class="column"><div class="tooltip"></div></div></div>
+          <div><p>sat</p><div class="column"><div class="tooltip"></div></div></div>
+          <div><p>sun</p><div class="column"><div class="tooltip"></div></div></div>
+        </div>
+      </div>
+      <div class="total">
+        <div class="total-month">
+          <p>Total this month</p> <!--14px-->
+          <p>$478.33</p><!--36px-->
+        </div> 
+        <div class="last-month">
+          <p>+2.4% </p><!--14px-->
+          <p>from last month</p><!--14px-->
+        </div>
+      </div> 
+    </div>
+    
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Bui Duc Viet</a>.
+  </div>
+  <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>

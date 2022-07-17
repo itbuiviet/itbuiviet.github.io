@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/*font-family: 'DM Sans', sans-serif;*/
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*General Setting*/
+html {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    color: hsl(28, 10%, 53%);
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+* {
+    margin:0;
+    padding:0;
+}
+.total-month p:first-child,
+.last-month p:last-child{
+    color: hsl(28, 10%, 53%);
+}
+.total-month p:last-child{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:  hsl(25, 47%, 15%); 
+}
+.balance p:last-child,
+.last-week-chart h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.last-week-chart h1{
+    color:  hsl(25, 47%, 15%);
+}
+.last-month p:first-child{
+    font-weight: 700;
+    color:  hsl(25, 47%, 15%);
+    text-align: right;
+}
+.chart {
+    font-size: 0.8rem;
+    color: hsl(28, 10%, 53%);
+}
+.chart .column {
+    background-color:hsl(10, 79%, 65%);
+}
+.logo{
+    width: 72px;
+}
+
+
+
+/*Main body*/
+
+html,body{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(27, 66%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.top{
+    background-color:hsl(10, 79%, 65%) ;
+    width: 540px;
+    height: 125px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    color: hsl(33, 100%, 98%);
+}
+.bottom{
+    background-color: hsl(33, 100%, 98%);
+    width: 540px;
+    border-radius: 20px;
+}
+
+.total{
+    height: 80px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.last-week-chart{
+    margin: 40px;
+    height: 310px;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    border-bottom: 5px solid hsl(27, 66%, 92%);;
+}
+.last-week-chart .chart{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+.last-week-chart .chart>div{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    row-gap: 20px;
+    align-items: center;
+}
+.chart .column {
+    background-color:hsl(10, 79%, 65%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    border-radius: 5px;
+}
+.chart .column:hover{
+    opacity: 0.7 ;
+    cursor: pointer;
+    
+}
+.tooltip {
+    position:absolute;
+    color:hsl(33, 100%, 98%) ;
+    background-color: hsl(25, 47%, 15%);
+    padding: 4px 8px;
+    border-radius: 2px;
+    top:-40px;
+    opacity: 0;
+    pointer-events: none;
+}
+.chart .column:hover .tooltip {
+    opacity: 1;
+}
+
+/*Responsive web*/
+
+@media (max-width: 600px){
+    .logo{
+        width: 60px;
+    }
+    .top{
+        width: 345px;
+        height: 100px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .bottom{
+        width: 345px;
+        border-radius: 10px;
+    }
+    .total{
+        height: 60px;
+        margin: 20px;
+    }
+    .last-week-chart{
+        margin: 20px;
+        height: 300px;
+        margin-bottom: 0;
+        border-bottom: 3px solid hsl(27, 66%, 92%);;
+    }
+    .last-week-chart .chart{
+        padding-bottom: 20px;
+    }
+    .chart .column {
+        width: 30px;
+        border-radius: 2px;
+    }
+    .tooltip {
+        padding: 2px 4px;
+        border-radius: 2px;
+        top:-30px;
+    }
+    .total-month p:last-child{
+        font-size: 1.8rem;
+    }
+    .balance p:last-child,
+    .last-week-chart h1 {
+        font-size: 1.3rem;
+    }
+    .total-month p:first-child,
+    .last-month p,.balance:first-child{
+        font-size: 0.8rem;
+    }
+    .chart {
+        font-size: 0.6rem;
+    }
+}
